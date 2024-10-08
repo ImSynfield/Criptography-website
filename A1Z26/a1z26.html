@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor — Projeto Integrador.</title>
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.png">
+    <link rel="stylesheet" href="stylea1z26.css">
+    <script src="a1z26.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../Images/a1z26.svg" alt="">
+        <h1 class="title">A1Z26</h1>
+    </header>
+
+    <main>
+        <p class="subtitle">Frase inicial</p>
+        <textarea name="a1plaintext" id="a1plaintext" placeholder="Insira aqui a frase que deseja criptografar." class="darkblock"></textarea>
+
+        <div class="darkblock" id="converterbutton" onclick="convertToA1Z26()">
+            <p>Converter!</p>
+        </div>
+
+        <p class="subtitle">Frase criptografada</p>
+        <div class="darkblock">
+            <p id="a1outputtext">Insira a frase que deseja criptografar no bloco acima para ver o resultado.</p>
+            <div onclick = "saveToClipboard()">
+                <img src="../Images/cptext.svg" alt="Copy text" id="cptext">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
