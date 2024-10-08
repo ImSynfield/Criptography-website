@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor — Projeto Integrador.</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
+
+    <link rel="stylesheet" href="caesar.css">
+</head>
+<body>
+    <header>
+        <img src="../Menu/imgs/caesar.svg" alt="">
+        <h1 class="title">CIFRA DE C.</h1>
+    </header>
+
+    <main>
+        <p class="subtitle">Frase inicial</p>
+        <textarea name="hashplaintext" id="hashplaintext" placeholder="Insira aqui a frase que deseja criptografar." class="darkblock"></textarea>
+
+        <p class="subtitle">Deslocamento</p>
+        <div class="darkblock" id="darkblock">
+            <div class="row">
+                <p id="m">–</p>
+                    <p>1</p>
+                <p id="p">+</p>
+            </div>
+        </div>
+
+        <p class="subtitle">Frase cifrada</p>
+        <div class="darkblock">
+            <p>Insira a frase que deseja criptografar no bloco acima para ver o resultado.</p>
+            <img src="../Hash/imgs/cptext.svg" alt="Copy text">
+        </div>
+    </main>
+</body>
+</html>
