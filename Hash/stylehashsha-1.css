@@ -75,5 +75,27 @@ main {
 }
 
 
+#converterbutton {
+  height: 3rem;
+  padding: 0;
+}
+
+#converterbutton:hover {
+  border: 1px solid white;
+  transition: 200ms;
+}
+
+#converterbutton p {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+}
 
 

@@ -10,20 +10,30 @@
 </head>
 
 <body>
+    
     <header>
         <img src="../Menu/imgs/morse.svg" alt="">
         <h1 class="title">CÓDIGO M.</h1>
     </header>
-
+    
     <main>
         <p class="subtitle">Frase inicial</p>
         <textarea name="morseplaintext" id="morseplaintext" placeholder="Insira aqui a frase que deseja criptografar." class="darkblock"></textarea>
-
+        
+        <div class="darkblock" id="converterbutton" onclick="convertToMorse()">
+            <p>Converter!</p>
+        </div>
+        
         <p class="subtitle">Frase criptografada</p>
         <div class="darkblock">
-            <p>Insira a frase que deseja criptografar no bloco acima para ver o resultado.</p>
-            <img src="../Hash/imgs/cptext.svg" alt="Copy text">
+            <p id="encryptedtext">Insira a frase que deseja criptografar no bloco acima para ver o resultado.</p>
+
+            <div onclick = "saveToClipboard()">
+                <img src="../Hash/imgs/cptext.svg" alt="Copy text" id="cptext">
+            </div>
         </div>
     </main>
+
+    <script src="./MorseCode.js"></script>
 </body>
 </html>
