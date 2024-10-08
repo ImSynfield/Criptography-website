@@ -35,18 +35,18 @@ function convertToMorse () {
 let cpcooldown = false;
 
 function saveToClipboard () {
-    if(encryptedtxt != "" && !cpcooldown){
-        cpcooldown = true;
-        let img = document.getElementById("cptext");
-        navigator.clipboard.writeText(encryptedtxt);
-        
-        img.src = './imgs/check.png';
-        img.style.width = "1.5rem";
+  if(encryptedtxt != "" && !cpcooldown){
+      cpcooldown = true;
+      let img = document.getElementById("cptext");
+      navigator.clipboard.writeText(encryptedtxt);
+      
+      img.src = '../Images/check.png';
+      img.style.width = "1.5rem";
 
-        setTimeout(() => {
-            cpcooldown = false;
-            img.src = '../Hash/imgs/cptext.svg';
-            img.style.width = "1.4rem";
-        }, 3000)
-    }
+      setTimeout(() => {
+          cpcooldown = false;
+          img.src = '../Images/cptext.svg';
+          img.style.width = "1.4rem";
+      }, 3000)
+  }
 }

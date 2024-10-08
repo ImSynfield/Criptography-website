@@ -35,12 +35,12 @@ function saveToClipboard () {
         let img = document.getElementById("cptext");
         navigator.clipboard.writeText(encryptedtxt);
         
-        img.src = '../MorseCode/imgs/check.png';
+        img.src = '../Images/check.png';
         img.style.width = "1.5rem";
 
         setTimeout(() => {
             cpcooldown = false;
-            img.src = '../Hash/imgs/cptext.svg';
+            img.src = '../Images/cptext.svg';
             img.style.width = "1.4rem";
         }, 3000)
     }
