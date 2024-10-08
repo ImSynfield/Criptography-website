@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor — Projeto Integrador.</title>
     <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
-
     <link rel="stylesheet" href="caesar.css">
+    <script src="CaesarCipher.js"></script>
 </head>
 <body>
     <header>
@@ -16,21 +16,23 @@
 
     <main>
         <p class="subtitle">Frase inicial</p>
-        <textarea name="cipherplaintext" id="cipherplaintext" placeholder="Insira aqui a frase que deseja criptografar." class="darkblock"></textarea>
+        <textarea id="cipherplaintext" oninput="atualizarCifra()" placeholder="Insira aqui a frase que deseja criptografar." class="darkblock"></textarea>
 
         <p class="subtitle">Deslocamento</p>
         <div class="darkblock" id="darkblock">
             <div class="row">
-                <p id="m">–</p>
-                    <p>1</p>
-                <p id="p">+</p>
+                <p id="m" onclick="modificarDeslocamento(2); atualizarCifra()">–</p>
+                <p id="desloc_output">0</p>
+                <p id="p" onclick="modificarDeslocamento(1); atualizarCifra()">+</p>
             </div>
         </div>
 
         <p class="subtitle">Frase cifrada</p>
         <div class="darkblock">
-            <p>Insira a frase que deseja criptografar no bloco acima para ver o resultado.</p>
-            <img src="../Hash/imgs/cptext.svg" alt="Copy text">
+            <p id="cipheroutputtext">Insira a frase que deseja criptografar no bloco acima para ver o resultado.</p>
+            <div onclick="saveToClipboard()">
+                <img src="../Hash/imgs/cptext.svg" alt="Copy text" id="cptext">
+            </div>
         </div>
     </main>
 </body>
